@@ -1,3 +1,5 @@
+# generate trajectory and save in to csv file
+
 from matplotlib import pyplot as plt
 import numpy as np
 import pandas as pd
