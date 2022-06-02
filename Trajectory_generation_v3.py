@@ -1,3 +1,5 @@
+# generate trajectory for scenario use
+
 from matplotlib import pyplot as plt
 import numpy as np
 import pandas as pd
@@ -75,15 +77,6 @@ def generate_traj(sim_time):
         if lat_v == lat_v_max and y_delta == 0:
             y_delta = abs(y_loc)
 
-    # print(len(x_loc_list))
-    # if len(x_loc_list) < 3600:
-    #     for i in range(3600-len(x_loc_list)):
-    #         x_loc_list.append(x_loc_list[-1]+long_v * delta_t)
-    #         y_loc_list.append(y_loc_list[-1])
-
     print(len(x_loc_list))
 
     return x_loc_list,y_loc_list
-
-
-# a,b = generate_traj(3600)
